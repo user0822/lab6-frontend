@@ -14,9 +14,9 @@ const HomePage: React.FC = () => {
 
       {/* Цитата українською */}
       <blockquote className="text-xl md:text-2xl italic text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl border-l-4 border-primary-500 pl-6 py-2 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-r-lg">
-        "Повірте, що ви <span className="text-primary-600 font-semibold">можете</span> — і ви вже на півдорозі до мети."
+        "Повірте, що ви <span className="text-primary-600 font-semibold">можете</span> - і ви вже на півдорозі до мети."
         <footer className="text-sm text-gray-500 dark:text-gray-400 mt-3 not-italic font-medium">
-          — Теодор Рузвельт
+          - Теодор Рузвельт
         </footer>
       </blockquote>
       

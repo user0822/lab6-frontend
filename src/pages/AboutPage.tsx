@@ -14,7 +14,7 @@ const AboutPage: React.FC = () => {
         
         <div className="my-6 border-l-4 border-primary-500 pl-4 bg-gray-50 dark:bg-gray-800 p-4 rounded-r">
           <p className="italic">
-            "Мета роботи — навчитися будувати сучасні frontend-додатки з використанням React, TypeScript та Tailwind CSS."
+            "Мета роботи - навчитися будувати сучасні frontend-додатки з використанням React, TypeScript та Tailwind CSS."
           </p>
         </div>
 

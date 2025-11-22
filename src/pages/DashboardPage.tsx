@@ -59,15 +59,26 @@ const DashboardPage: React.FC = () => {
     };
   }, []);
 
-  const handleCreateTask = async (e: React.FormEvent) => {
+const handleCreateTask = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newTaskTitle) return;
+    console.log("Кнопку натиснуто!"); 
+
+    if (!newTaskTitle.trim()) {
+      console.log("Поле пусте, скасовуємо."); 
+      toast.error("Введіть назву завдання!");
+      return;
+    }
+
+    console.log("Відправка запиту...", newTaskTitle); 
     setLoading(true);
+    
     try {
         const projectId = 1; 
         await api.post('/tasks', { title: newTaskTitle, projectId });
+        console.log("Успіх!"); 
         setNewTaskTitle('');
     } catch (error) {
+        console.error("Помилка:", error); 
         toast.error('Помилка створення.');
     } finally {
         setLoading(false);
